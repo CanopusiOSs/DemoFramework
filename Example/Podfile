@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '10.0'
+
+target 'DemoFramework_Example' do
+  pod 'DemoFramework', :path => '../'
+
+  target 'DemoFramework_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
